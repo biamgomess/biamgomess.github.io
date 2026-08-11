@@ -1098,17 +1098,10 @@ function setLanguage(language) {
      HERO
      ======================================================= */
 
-  const availability =
-    document.querySelector(".availability");
-
-  if (availability) {
-    availability.childNodes.forEach(node => {
-      if (node.nodeType === Node.TEXT_NODE) {
-        node.textContent =
-          ` ${t.hero.availability}`;
-      }
-    });
-  }
+  setText(
+  ".availability-text",
+  t.hero.availability
+);
 
   setText(".hero-role", t.hero.role);
   setText(".hero-summary", t.hero.summary);
