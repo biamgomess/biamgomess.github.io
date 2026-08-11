@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Beatriz Martins Gomes Silva — Data Science, Machine Learning, Data Analytics and Biomedical Engineering.">
+  <meta name="theme-color" content="#f8f7fb">
+  <title>Beatriz Martins Gomes Silva | Data Science & Engineering</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">BMGS</span>
+        <span class="brand-separator">/</span>
+        <span class="brand-label">PORTFOLIO</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="mainNav" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="assets/docs/Beatriz_Martins_Gomes_Silva_CV_EN.pdf" target="_blank" rel="noopener">CV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal">
+        <div class="availability">
+          <span class="status-dot"></span>
+          OPEN TO INTERNATIONAL REMOTE OPPORTUNITIES
+        </div>
+
+        <h1 id="hero-title">
+          <span class="name-solid">Beatriz</span>
+          <span class="name-outline">Martins Gomes Silva</span>
+        </h1>
+
+        <p class="hero-role">Data Science · Machine Learning · Data Analytics</p>
+
+        <p class="hero-summary">
+          Biomedical Engineering student combining data analysis, machine learning and
+          engineering problem-solving to build interpretable models, analytical dashboards
+          and workflow automation solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore projects</a>
+          <a class="btn btn-secondary" href="assets/docs/Beatriz_Martins_Gomes_Silva_CV_EN.pdf" data-cv-link target="_blank" rel="noopener">
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/biamgomess" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/beatriz-martins-gomes-silva-a57a8b335/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:biamgomes.ebio@gmail.com">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Profile portrait">
+        <div class="portrait-orbit">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <div class="portrait-circle">
+            <img src="assets/images/profile.jpg" alt="Portrait of Beatriz Martins Gomes Silva">
+          </div>
+          <span class="orbit-dot dot-one"></span>
+          <span class="orbit-dot dot-two"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-index">01</span>
+        <div>
+          <p class="section-label">PROFILE / TOOLBOX</p>
+          <h2>Turning complex problems into structured, analytical solutions.</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I am a Biomedical Engineering student at the Federal University of Uberlândia (UFU),
+            with international academic experience at Polytech Marseille and hands-on Data Science
+            experience in an industrial engineering environment in France.
+          </p>
+          <p>
+            My work sits at the intersection of <strong>data analysis, machine learning,
+            automation and engineering systems</strong>. I enjoy transforming operational or
+            experimental problems into structured datasets, interpretable models and useful
+            digital tools.
+          </p>
+          <p>
+            I am particularly interested in international opportunities involving Data Science,
+            Data Analytics, Machine Learning and engineering-oriented digital transformation.
+          </p>
+        </div>
+
+        <div class="skills-explorer reveal">
+          <div class="skill-tabs" role="tablist" aria-label="Technical skill categories">
+            <button class="skill-tab active" type="button" role="tab" aria-selected="true" data-skill="programming">
+              <span class="skill-id">A.01</span>
+              <span class="skill-title">Programming & Data</span>
+              <span class="skill-arrow">↗</span>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="ml">
+              <span class="skill-id">A.02</span>
+              <span class="skill-title">Machine Learning</span>
+              <span class="skill-arrow">↗</span>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="analytics">
+              <span class="skill-id">A.03</span>
+              <span class="skill-title">Data Analytics</span>
+              <span class="skill-arrow">↗</span>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" data-skill="digital">
+              <span class="skill-id">A.04</span>
+              <span class="skill-title">Digital Solutions</span>
+              <span class="skill-arrow">↗</span>
+            </button>
+          </div>
+
+          <div class="skill-detail" id="skillDetail" aria-live="polite">
+            <div class="skill-detail-head">
+              <span id="skillDetailCode">A.01</span>
+              <h3 id="skillDetailTitle">Programming & Data</h3>
+            </div>
+            <p id="skillDetailText">
+              Languages and libraries used to clean, transform, model and visualize structured and experimental data.
+            </p>
+            <div class="skill-tools" id="skillTools">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span>
+              <span>R</span><span>tidyverse</span><span>MATLAB</span>
+            </div>
+            <div class="skill-application">
+              <span class="micro-label">APPLIED IN</span>
+              <p id="skillApplied">Machine-learning projects, experimental data pipelines and engineering analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="experience">
+      <div class="section-heading reveal">
+        <span class="section-index">02</span>
+        <div>
+          <p class="section-label">EXPERIENCE / FIELD WORK</p>
+          <h2>Experience across industrial data, research and engineering systems.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-date">06/2026 — 07/2026</div>
+          <div class="timeline-content">
+            <div class="timeline-heading">
+              <div>
+                <h3>Data Science Intern</h3>
+                <p class="timeline-org">Expleo Group · Airbus Helicopters project</p>
+              </div>
+              <span class="timeline-place">Vitrolles, France</span>
+            </div>
+            <ul>
+              <li>Developed interactive Looker Studio dashboards for financial and quality-related datasets.</li>
+              <li>Designed a structured AppSheet workflow to improve operational data collection and troubleshooting requests.</li>
+              <li>Translated operational requirements into dashboards, structured data models and digital workflows for internal users.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Looker Studio</span><span>AppSheet</span><span>Data Analytics</span><span>Workflow Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-date">03/2025 — 08/2025</div>
+          <div class="timeline-content">
+            <div class="timeline-heading">
+              <div>
+                <h3>Undergraduate Researcher — Control Systems</h3>
+                <p class="timeline-org">LASEC</p>
+              </div>
+              <span class="timeline-place">Uberlândia, Brazil</span>
+            </div>
+            <ul>
+              <li>Built a data-acquisition pipeline for an experimental aeropendulum using ESP32 and MPU9250 sensors.</li>
+              <li>Collected PWM-angle time-series data through serial communication at 10 Hz.</li>
+              <li>Performed dynamic system identification and validated the mathematical model against experimental responses, reaching an 81.39 % model fit.</li>
+            </ul>
+            <div class="tag-row">
+              <span>MATLAB</span><span>Simulink</span><span>ESP32</span><span>System Identification</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker"><span></span></div>
+          <div class="timeline-date">03/2023 — 09/2024</div>
+          <div class="timeline-content">
+            <div class="timeline-heading">
+              <div>
+                <h3>Undergraduate Researcher — Data Science</h3>
+                <p class="timeline-org">GIM</p>
+              </div>
+              <span class="timeline-place">Uberlândia, Brazil</span>
+            </div>
+            <ul>
+              <li>Developed and evaluated a Decision Tree classification workflow using the Breast Cancer Wisconsin dataset.</li>
+              <li>Explored predictive features, model evaluation and interpretable classification rules.</li>
+              <li>Applied R-based data analysis and statistical modeling to a biomedical classification problem.</li>
+            </ul>
+            <div class="tag-row">
+              <span>R</span><span>Machine Learning</span><span>Decision Trees</span><span>Biomedical Data</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-index">03</span>
+        <div>
+          <p class="section-label">SELECTED WORK / PUBLIC REPOSITORIES</p>
+          <h2>A closer look at the projects behind the portfolio.</h2>
+        </div>
+      </div>
+
+      <div class="project-carousel reveal" aria-roledescription="carousel" aria-label="Selected projects">
+        <div class="carousel-toolbar">
+          <div class="carousel-count">
+            <span id="currentProject">01</span>
+            <span class="carousel-divider">/</span>
+            <span>04</span>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" id="prevProject" aria-label="Previous project">←</button>
+            <button type="button" id="nextProject" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="projectTrack">
+
+            <article class="project-slide active" data-index="0">
+              <div class="project-info">
+                <div class="project-type">DATA SCIENCE · R · MACHINE LEARNING</div>
+                <h3>Breast Cancer Diagnostic Classification in R</h3>
+                <p>
+                  End-to-end classification workflow using the Breast Cancer Wisconsin dataset,
+                  combining exploratory analysis, cross-validation, interpretable Decision Trees,
+                  ROC analysis and error interpretation.
+                </p>
+                <div class="project-highlights">
+                  <div><span>Dataset</span><strong>569 observations</strong></div>
+                  <div><span>Test accuracy</span><strong>85.96 %</strong></div>
+                  <div><span>ROC-AUC</span><strong>0.8862</strong></div>
+                </div>
+                <div class="tag-row">
+                  <span>R</span><span>tidyverse</span><span>caret</span><span>rpart</span><span>Quarto</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-btn primary" href="https://github.com/biamgomess/breast-cancer-classification-r" target="_blank" rel="noopener">
+                    View on GitHub <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual visual-ml" aria-label="Model evaluation summary">
+                <div class="visual-label">MODEL / EVALUATION</div>
+                <div class="matrix">
+                  <span class="matrix-axis y">PREDICTED</span>
+                  <div class="matrix-cell good"><small>TN</small><strong>98</strong></div>
+                  <div class="matrix-cell warn"><small>FN</small><strong>15</strong></div>
+                  <div class="matrix-cell warn"><small>FP</small><strong>9</strong></div>
+                  <div class="matrix-cell good"><small>TP</small><strong>49</strong></div>
+                  <span class="matrix-axis x">TRUE CLASS</span>
+                </div>
+                <div class="visual-note">Interpretable baseline · malignant class as event of interest</div>
+              </div>
+            </article>
+
+            <article class="project-slide" data-index="1">
+              <div class="project-info">
+                <div class="project-type">DATA ANALYTICS · AUTOMATION · PLANNING</div>
+                <h3>Engineering Project Workload & Planning Automation</h3>
+                <p>
+                  A multi-module engineering management system that synchronizes project records,
+                  workload, progress, weekly time allocation and planning data through Google Apps Script.
+                </p>
+                <div class="project-highlights">
+                  <div><span>Core model</span><strong>Master project database</strong></div>
+                  <div><span>Analytics</span><strong>KPIs & workload tracking</strong></div>
+                  <div><span>Automation</span><strong>Multi-sheet sync</strong></div>
+                </div>
+                <div class="tag-row">
+                  <span>Google Apps Script</span><span>Google Sheets</span><span>JavaScript</span><span>KPIs</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-btn primary" href="https://github.com/biamgomess/engineering-project-workload-automation" target="_blank" rel="noopener">
+                    View on GitHub <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual visual-workflow" aria-label="Project automation workflow">
+                <div class="visual-label">WORKLOAD / PIPELINE</div>
+                <div class="flow-node main-node">Projects<br><small>Master database</small></div>
+                <div class="flow-line vertical"></div>
+                <div class="flow-branch">
+                  <div class="flow-node">Progress</div>
+                  <div class="flow-node">Workload</div>
+                  <div class="flow-node">Weekly</div>
+                </div>
+                <div class="flow-line vertical short"></div>
+                <div class="flow-node accent-node">Dashboard + Planning</div>
+              </div>
+            </article>
+
+            <article class="project-slide" data-index="2">
+              <div class="project-info">
+                <div class="project-type">WORKFLOW AUTOMATION · STRUCTURED DATA</div>
+                <h3>Service Request Workflow Automation</h3>
+                <p>
+                  A web-based request workflow that transforms operational requests into validated,
+                  traceable and analytics-ready records while supporting structured notifications
+                  and request follow-up.
+                </p>
+                <div class="project-highlights">
+                  <div><span>Input</span><strong>Structured request form</strong></div>
+                  <div><span>Storage</span><strong>Centralized records</strong></div>
+                  <div><span>Output</span><strong>Status & notifications</strong></div>
+                </div>
+                <div class="tag-row">
+                  <span>Apps Script</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Google Sheets</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-btn primary" href="https://github.com/biamgomess/service-request-workflow-automation" target="_blank" rel="noopener">
+                    View on GitHub <span>↗</span>
+                  </a>
+                  <a class="project-btn secondary" href="https://script.google.com/macros/s/AKfycbx2XD1s41Y0xABP2oOhWc0lNayWqb9g5bGLjNTegPCtEwbw86pkeXWPFzzQPAT1mFk1hA/exec" target="_blank" rel="noopener">
+                    Live demo <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual visual-request" aria-label="Service request workflow">
+                <div class="visual-label">REQUEST / LIFECYCLE</div>
+                <div class="request-step active-step"><span>01</span><strong>Submit</strong></div>
+                <div class="request-connector"></div>
+                <div class="request-step"><span>02</span><strong>Validate</strong></div>
+                <div class="request-connector"></div>
+                <div class="request-step"><span>03</span><strong>Store</strong></div>
+                <div class="request-connector"></div>
+                <div class="request-step"><span>04</span><strong>Notify</strong></div>
+              </div>
+            </article>
+
+            <article class="project-slide" data-index="3">
+              <div class="project-info">
+                <div class="project-type">JAVASCRIPT · INTERACTIVE LOGIC · FRONTEND</div>
+                <h3>Tower of Iris — Hanoi-Inspired Puzzle Game</h3>
+                <p>
+                  Interactive browser puzzle with Canvas rendering, state management,
+                  rule-based disk movement, progressive difficulty, scoring and timed challenges.
+                </p>
+                <div class="project-highlights">
+                  <div><span>Levels</span><strong>12 configurations</strong></div>
+                  <div><span>Modes</span><strong>3 game modes</strong></div>
+                  <div><span>Interaction</span><strong>Canvas + state logic</strong></div>
+                </div>
+                <div class="tag-row">
+                  <span>JavaScript</span><span>HTML5 Canvas</span><span>CSS</span><span>Game Logic</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="project-btn primary" href="https://github.com/biamgomess/tower-of-iris" target="_blank" rel="noopener">
+                    View on GitHub <span>↗</span>
+                  </a>
+                  <a class="project-btn secondary" href="https://torredeirisv2.web.app/" target="_blank" rel="noopener">
+                    Play live <span>↗</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-visual visual-game" aria-label="Tower puzzle logic illustration">
+                <div class="visual-label">STATE / LOGIC</div>
+                <div class="tower-board">
+                  <div class="peg"><span class="disk disk-5"></span><span class="disk disk-4"></span><span class="disk disk-2"></span></div>
+                  <div class="peg"><span class="disk disk-3"></span></div>
+                  <div class="peg"><span class="disk disk-1"></span></div>
+                </div>
+                <div class="visual-note">Select → validate rule → update state → compare target</div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="carousel-dots" role="tablist" aria-label="Select project">
+          <button class="carousel-dot active" type="button" data-index="0" aria-label="Project 1" aria-selected="true"></button>
+          <button class="carousel-dot" type="button" data-index="1" aria-label="Project 2" aria-selected="false"></button>
+          <button class="carousel-dot" type="button" data-index="2" aria-label="Project 3" aria-selected="false"></button>
+          <button class="carousel-dot" type="button" data-index="3" aria-label="Project 4" aria-selected="false"></button>
+        </div>
+
+        <div class="github-cta">
+          <div>
+            <span class="micro-label">MORE CODE & PROJECT DETAILS</span>
+            <p>Explore the complete repositories, documentation and source code on my GitHub profile.</p>
+          </div>
+          <a href="https://github.com/biamgomess" target="_blank" rel="noopener">
+            Visit GitHub profile <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="education">
+      <div class="section-heading reveal">
+        <span class="section-index">04</span>
+        <div>
+          <p class="section-label">EDUCATION / LANGUAGES</p>
+          <h2>Biomedical engineering with an international academic path.</h2>
+        </div>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-list reveal">
+          <article class="education-item">
+            <span class="education-year">2025 — 2026</span>
+            <div>
+              <h3>Polytech Marseille · Aix-Marseille Université</h3>
+              <p>Biomedical Engineering — International Exchange Program</p>
+              <span class="education-note">Ranked 1st</span>
+            </div>
+          </article>
+          <article class="education-item">
+            <span class="education-year">2022 — Present</span>
+            <div>
+              <h3>Federal University of Uberlândia — UFU</h3>
+              <p>B.Sc. in Biomedical Engineering</p>
+              <span class="education-note">Expected graduation: 08/2027</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="language-card reveal">
+          <p class="micro-label">LANGUAGES</p>
+          <div class="language-row"><span>Portuguese</span><strong>Native</strong></div>
+          <div class="language-row"><span>French</span><strong>Fluent · C2</strong></div>
+          <div class="language-row"><span>English</span><strong>Advanced · C1</strong></div>
+        </div>
+      </div>
+
+      <div class="certifications reveal">
+        <p class="micro-label">CERTIFICATIONS</p>
+        <div class="cert-row">
+          <span>2023</span>
+          <strong>R for Data Science: Data Analysis and Statistical Modeling</strong>
+          <em>20 h</em>
+        </div>
+        <div class="cert-row">
+          <span>2024</span>
+          <strong>Biomedical Signal Processing and Analysis with R</strong>
+          <em>30 h</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading compact reveal">
+        <span class="section-index">05</span>
+        <div>
+          <p class="section-label">CONTACT</p>
+        </div>
+      </div>
+
+      <div class="contact-grid reveal">
+        <a href="mailto:biamgomes.ebio@gmail.com" class="contact-item">
+          <span>Email</span>
+          <strong>biamgomes.ebio@gmail.com</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://www.linkedin.com/in/beatriz-martins-gomes-silva-a57a8b335/" target="_blank" rel="noopener" class="contact-item">
+          <span>LinkedIn</span>
+          <strong>beatriz-martins-gomes-silva</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://github.com/biamgomess" target="_blank" rel="noopener" class="contact-item">
+          <span>GitHub</span>
+          <strong>@biamgomess</strong>
+          <em>↗</em>
+        </a>
+        <a href="assets/docs/Beatriz_Martins_Gomes_Silva_CV_EN.pdf" target="_blank" rel="noopener" class="contact-item">
+          <span>CV</span>
+          <strong>English résumé</strong>
+          <em>↗</em>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>BEATRIZ MARTINS GOMES SILVA</span>
+    <span>DATA SCIENCE · MACHINE LEARNING · DATA ANALYTICS</span>
+    <span>© <span id="year"></span></span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
